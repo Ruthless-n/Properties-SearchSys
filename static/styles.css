@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #0c0016;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Define a altura da página como 100% da altura da tela */
+    margin: 0; /* Remove as margens padrão do corpo */
+    color: #d2a1d3;
+}
+
+.container {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    margin-left: 100px;
+}
+
+.form-input {
+    border-radius: 50px;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px; /* Adiciona margem inferior ao campo de entrada */
+    padding-left: 30px;
+    border: 3px solid #3a2648;
+    background-color: #1a012b;
+    color: #d2a1d3;
+    outline: none;
+}
+
+.form-submit {
+    border-radius: 50px;
+    display: block; /* Transforma o botão em um elemento de bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    background-color: #81007f;
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 30px;
+    width: 80px;
+}
+
+.resultados {
+    max-height: 80vh;
+    width: 30%; 
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    border: 1px solid #dddddd; 
+    padding: 8px; 
+    text-align: left;
+    overflow-y: auto; 
+}
+
+
+.resultados::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+.resultados::-webkit-scrollbar-thumb {
+    background-color: #81007f; /* Cor do botão de rolagem */
+    border-radius: 5px; /* Raio da borda do botão de rolagem */
+}
+
+.resultados::-webkit-scrollbar-track {
+    background-color: #1a012b; /* Cor do fundo da barra de rolagem */
+}

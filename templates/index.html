@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Busca de Imóveis</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Busque as informações através do imóvel:</h1>
+        <form action="/search" method="post">
+            <input type="text" name="termo" placeholder="Digite aqui" class="form-input">
+            <input type="submit" value="Buscar" class="form-submit">
+        </form>
+    </div>
+
+    <div class="resultados">
+        <table>
+            <thead>
+                <tr>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr>
+                    <td>{{ result[0] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
